@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Amaranth:700|Lato:300,400|Raleway:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Raleway:300" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
     <title>Document</title>
 </head>
@@ -24,10 +24,10 @@
                 </div>
                 <div class="menu">
                     <ul>
-                        <li><a href="#Home" id="smooth-scroll0">Home</a></li>
-                        <li><a href="#App" id="smooth-scroll1">App</a></li>
-                        <li><a href="#Noticias" id="smooth-scroll">Noticias</a></li>
-                        <li><a href="#Contacto" id="smooth-scroll2">Contacto</a></li>
+                        <li><a href="#Home" class="smooth-scroll0">Inicio</a></li>
+                        <li><a href="#App" class="smooth-scroll1">App</a></li>
+                        <li><a href="#Noticias" class="smooth-scroll">Noticias</a></li>
+                        <li><a href="#Contacto" class="smooth-scroll2">Contacto</a></li>
                     </ul>
                 </div>
             </nav>
@@ -38,13 +38,9 @@
         </header>
         <div class="content" id="App">
 
-            <h2 class="descripcion">ALGUNA DESCRIPCION</h2>
+            <h2 class="descripcion">DESCARGA LA APP</h2>
             <p class="descripcion">Una app pensada para mejorar la percepcion de seguridad en la ciudad, te invitamos a
-                descargarla Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus, officia fugiat rerum
-                dolores, voluptatum consequuntur distinctio, nostrum sapiente mollitia tempora reprehenderit eos odio
-                officiis aliquam soluta exercitationem maiores sequi modi?</p>
-
-
+                descargarla Lorem ipsum dolor sit, amet es sequi modi?</p>
         </div>
         <div class="container">
             <div id="gplay">
@@ -52,15 +48,15 @@
                     <a id="link" href="http://" target="_blank">
                         <i class="fab fa-google-play fa-5x"></i>
                     </a>
-                    <h2>Google PLay</h2>
+                    <h2>Google Play</h2>
                 </div>
             </div>
             <div id="appstore">
                 <div>
                     <a id="link" href="http://" target="_blank">
-                        <i class="fab fa-app-store fa-5x"></i>
+                        <i class="fab fa-app-store-ios fa-5x"></i>
                     </a>
-                    <h2>Appstore</h2>
+                    <h2>App Store</h2>
                 </div>
             </div>
 
@@ -68,13 +64,14 @@
         <hr>
         <div class="content" id="Noticias">
 
-
+            <h2 class="descripcion">NOTICIAS</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, delectus!</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit ullam possimus, hic quam quidem
                 ratione atque exercitationem vero alias rem?</p>
         </div>
         <hr>
         <div class="content" id="Contacto">
+            <h2 class="descripcion">CONTACTO</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem eos deserunt, dolores impedit minus
                 vel. Modi, doloremque ipsum. Eius culpa facere a dolor quae consequatur! Porro assumenda ratione
                 adipisci sit id sunt saepe, accusantium nobis incidunt non temporibus aspernatur ipsum quod magnam
@@ -99,11 +96,13 @@
             <h3><span>SECURI</span>TIPS</h3>
 
             <p class="footer-links">
-                <a href="#">Home</a>
+                <a href="#Home" class="smooth-scroll0">Inicio</a>
                 ·
-                <a href="#">Noticias</a>
+                <a href="#App" class="smooth-scroll1">App</a>
+                .
+                <a href="#Noticias" class="smooth-scroll">Noticias</a>
                 ·
-                <a href="#">Contacto</a>
+                <a href="#Contacto" class="smooth-scroll2">Contacto</a>
             </p>
 
             <p class="footer-company-name">SecuriTips &copy; 2018</p>
@@ -144,7 +143,7 @@
         </div>
 
     </footer>
-
+    <!--SCRIPT-->
     <script type="text/javascript">
 
         //toggle button
@@ -164,7 +163,7 @@
         });
         ////// smooth scroll
         // Animate smooth scroll
-        $('#smooth-scroll0').on('click', function () {
+        $('.smooth-scroll0').on('click', function () {
             const home = $('#Home').position().top;
 
             $('html, body').animate({
@@ -172,7 +171,7 @@
             }, 900);
         });
 
-        $('#smooth-scroll1').on('click', function () {
+        $('.smooth-scroll1').on('click', function () {
             const app = $('#App').position().top;
 
             $('html, body').animate({
@@ -180,7 +179,7 @@
             }, 900);
         });
 
-        $('#smooth-scroll').on('click', function () {
+        $('.smooth-scroll').on('click', function () {
             const noticias = $('#Noticias').position().top;
 
             $('html, body').animate({
@@ -188,7 +187,7 @@
             }, 900);
         });
 
-        $('#smooth-scroll2').on('click', function () {
+        $('.smooth-scroll2').on('click', function () {
             const contacto = $('#Contacto').position().top;
 
             $('html, body').animate({
